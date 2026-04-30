@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&family=Hind+Siliguri:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   GLOBAL MANGO COLOR VARIABLES
+   Change these to update entire website colors
+   ============================================ */
+:root {
+  /* ---- RIPE MANGO (পাকা আম) ---- */
+  --mango-ripe: #FFC324;
+  --mango-ripe-deep: #F4BB44;
+  --mango-ripe-dark: #E6A800;
+  --mango-ripe-darker: #CC9600;
+  --mango-ripe-light: #FFD666;
+  --mango-ripe-pale: #FFF3CC;
+
+  /* ---- RAW MANGO (কাঁচা আম) ---- */
+  --mango-raw: #4A7C59;
+  --mango-raw-light: #6BAE7A;
+  --mango-raw-dark: #2D5A3D;
+  --mango-raw-pale: #E8F5E9;
+  --mango-raw-bright: #90EE90;
+
+  /* ---- ACCENT COLORS ---- */
+  --mango-orange: #FF8C00;
+  --mango-orange-light: #FFB347;
+  --mango-cream: #FFF8E7;
+  --mango-gold: #FFD700;
+  --mango-leaf: #2E7D32;
+  --mango-brown: #8B4513;
+
+  /* ---- BRAND PALETTE ---- */
+  --brand-primary: var(--mango-ripe);
+  --brand-secondary: var(--mango-raw);
+  --brand-accent: var(--mango-orange);
+  --brand-bg: #FFFFFF;
+  --brand-bg-alt: #FAFAF7;
+  --brand-text: #1A1A1A;
+  --brand-text-muted: #6B7280;
+  --brand-border: #F0EDE6;
+
+  /* ---- UI VARIABLES ---- */
+  --navbar-height: 72px;
+  --border-radius-card: 20px;
+  --border-radius-btn: 50px;
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow-card: 0 4px 30px rgba(0, 0, 0, 0.06);
+  --shadow-card-hover: 0 20px 60px rgba(0, 0, 0, 0.12);
+  --shadow-mango: 0 20px 60px rgba(255, 195, 36, 0.25);
+  --shadow-green: 0 20px 60px rgba(74, 124, 89, 0.25);
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--brand-bg);
+  color: var(--brand-text);
+  font-family: 'DM Sans', 'Hind Siliguri', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', 'Hind Siliguri', serif;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.bengali-text {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.display-font {
+  font-family: 'Playfair Display', serif;
+}
+
+.accent-font {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* ============================================
+   CUSTOM SCROLLBAR
+   ============================================ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--brand-bg-alt);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--mango-ripe);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mango-ripe-dark);
+}
+
+/* ============================================
+   SELECTION
+   ============================================ */
+::selection {
+  background: var(--mango-ripe);
+  color: #1A1A1A;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.text-gradient-mango {
+  background: linear-gradient(135deg, var(--mango-ripe) 0%, var(--mango-orange) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-green {
+  background: linear-gradient(135deg, var(--mango-raw) 0%, var(--mango-leaf) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-mango-gradient {
+  background: linear-gradient(135deg, var(--mango-ripe) 0%, var(--mango-orange) 100%);
+}
+
+.bg-raw-gradient {
+  background: linear-gradient(135deg, var(--mango-raw-pale) 0%, var(--mango-raw) 100%);
+}
+
+.card-glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 195, 36, 0.15);
+}
+
+.card-3d {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.card-3d:hover {
+  transform: perspective(1000px) rotateX(-5deg) rotateY(5deg) translateZ(10px);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--mango-ripe) 0%, var(--mango-orange) 100%);
+  color: #1A1A1A;
+  font-weight: 600;
+  border-radius: var(--border-radius-btn);
+  transition: all var(--transition-medium);
+  position: relative;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.5s;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(255, 195, 36, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--mango-raw);
+  border: 2px solid var(--mango-raw);
+  font-weight: 600;
+  border-radius: var(--border-radius-btn);
+  transition: all var(--transition-medium);
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: var(--mango-raw);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-green);
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 50px 0;
+  }
+}
+
+/* ============================================
+   3D EFFECTS
+   ============================================ */
+.mango-3d {
+  transform-style: preserve-3d;
+  animation: float3d 6s ease-in-out infinite;
+}
+
+@keyframes float3d {
+  0%, 100% { 
+    transform: translateY(0) rotateX(0deg) rotateY(0deg);
+  }
+  25% { 
+    transform: translateY(-15px) rotateX(5deg) rotateY(10deg);
+  }
+  50% { 
+    transform: translateY(-8px) rotateX(-3deg) rotateY(-5deg);
+  }
+  75% { 
+    transform: translateY(-12px) rotateX(8deg) rotateY(3deg);
+  }
+}
+
+.parallax-element {
+  will-change: transform;
+}
+
+/* ============================================
+   SWIPER CUSTOM STYLES
+   ============================================ */
+.swiper-pagination-bullet {
+  background: var(--mango-ripe) !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 30px !important;
+  border-radius: 5px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--mango-ripe) !important;
+}
+
+/* ============================================
+   AOS ANIMATION OVERRIDES
+   ============================================ */
+[data-aos] {
+  pointer-events: none;
+}
+
+[data-aos].aos-animate {
+  pointer-events: auto;
+}
+
+/* ============================================
+   PRODUCT CARD STYLES
+   ============================================ */
+.product-card {
+  transition: all var(--transition-medium);
+  border-radius: var(--border-radius-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.product-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-image {
+  transition: transform var(--transition-slow);
+}
+
+/* ============================================
+   CATEGORY BADGE
+   ============================================ */
+.badge-ripe {
+  background: linear-gradient(135deg, var(--mango-ripe), var(--mango-orange));
+  color: #1A1A1A;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  border-radius: 50px;
+}
+
+.badge-raw {
+  background: linear-gradient(135deg, var(--mango-raw-light), var(--mango-raw));
+  color: white;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  border-radius: 50px;
+}
+
+/* ============================================
+   LOADING SKELETON
+   ============================================ */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ============================================
+   CART SIDEBAR
+   ============================================ */
+.cart-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+/* ============================================
+   MOBILE RESPONSIVE
+   ============================================ */
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .section-padding {
+    padding: 40px 0;
+  }
+}
+
+/* ============================================
+   MARQUEE
+   ============================================ */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-flex;
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ============================================
+   NOISE TEXTURE OVERLAY
+   ============================================ */
+.noise-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.4;
+  mix-blend-mode: overlay;
+}
