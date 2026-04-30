@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { useLanguage } from '@/lib/languageContext';
 import { products } from '@/lib/products';
@@ -25,7 +25,8 @@ const sortOptions = [
   { id: 'popular', en: 'Most Popular', bn: 'সবচেয়ে জনপ্রিয়' },
 ];
 
-export default function ProductsPage() {
+// ✅ Isolated component that uses useSearchParams
+function ProductsContent() {
   const { t } = useLanguage();
   const searchParams = useSearchParams();
   const initialCategory = (searchParams.get('category') as MangoCategory) || 'all';
@@ -169,5 +170,18 @@ export default function ProductsPage() {
         )}
       </div>
     </div>
+  );
+}
+
+// ✅ Default export wraps the content in Suspense
+export default function ProductsPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-[#FAFAF7] flex items-center justify-center">
+        <div className="text-6xl animate-bounce">🥭</div>
+      </div>
+    }>
+      <ProductsContent />
+    </Suspense>
   );
 }
