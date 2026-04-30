@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/lib/languageContext';
-import { MapPin, Phone, Mail, Facebook, Instagram, Youtube, Send } from 'lucide-react';
+import { MapPin, Phone, Mail, Send } from 'lucide-react';
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -62,11 +62,11 @@ export default function Footer() {
                 'রাজশাহীর বাগান থেকে সরাসরি আপনার দরজায় প্রিমিয়াম মানের তাজা আম।'
               )}
             </p>
-            <div className="flex gap-3 mt-6">
+            {/* <div className="flex gap-3 mt-6">
               {[
-                { icon: Facebook, color: '#1877F2', href: '#' },
-                { icon: Instagram, color: '#E4405F', href: '#' },
-                { icon: Youtube, color: '#FF0000', href: '#' },
+                 { icon: Facebook, color: '#1877F2', href: '#', label: 'Facebook' },
+  { icon: Twitter, color: '#1DA1F2', href: '#', label: 'Twitter' },
+  { icon: Send,    color: '#0088CC', href: '#', label: 'Telegram' }, 
               ].map(({ icon: Icon, color, href }) => (
                 <a
                   key={href + color}
@@ -77,7 +77,7 @@ export default function Footer() {
                   <Icon size={18} />
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* QUICK LINKS */}
