@@ -126,7 +126,7 @@ function AnnouncementBar() {
     <div
       ref={barRef}
       className="overflow-hidden py-2 text-white text-xs font-medium"
-      style={{ background: "linear-gradient(90deg,#2D5A3D,#4A7C59,#2D5A3D)" }}
+      style={{ background: 'linear-gradient(90deg,#1A1A1A 0%,#2D5A3D 100%)', padding: '10px 0' }}
     >
       <div
         ref={wrapRef}
