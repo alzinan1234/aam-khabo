@@ -55,7 +55,7 @@ export const products: Product[] = [
     category: 'ripe',
     variety: mangoVarieties[1],
     images: [
-      'https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=600',
+      'https://t4.ftcdn.net/jpg/00/14/71/15/360_F_14711535_o3MgCpenxtKxNX5bw3iAzfoUfWBAKLuy.jpg',
       'https://images.unsplash.com/photo-1605027990121-cbae9e0642df?w=600',
     ],
     weight: '1 kg',
@@ -82,7 +82,7 @@ export const products: Product[] = [
     category: 'ripe',
     variety: mangoVarieties[2],
     images: [
-      'https://images.unsplash.com/photo-1548013146-72479768bada?w=600',
+      'https://sapaharmango.com/wp-content/uploads/2025/04/fazli-mango.jpg',
     ],
     weight: '2 kg',
     weightBn: '২ কেজি',
@@ -164,7 +164,7 @@ export const products: Product[] = [
     category: 'raw',
     variety: mangoVarieties[0],
     images: [
-      'https://images.unsplash.com/photo-1605027990121-cbae9e0642df?w=600',
+      'https://media.istockphoto.com/id/1154538189/photo/raw-green-mangoes-hanging-in-bunch-on-tree.jpg?s=612x612&w=0&k=20&c=tNMNGi8n3px8IU3FARvNJzNSNJo7laycWNOaHSu9EOw=',
     ],
     weight: '1 kg',
     weightBn: '১ কেজি',
@@ -192,7 +192,7 @@ export const products: Product[] = [
     category: 'raw',
     variety: mangoVarieties[1],
     images: [
-      'https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=600',
+      'https://media.istockphoto.com/id/1154538189/photo/raw-green-mangoes-hanging-in-bunch-on-tree.jpg?s=612x612&w=0&k=20&c=tNMNGi8n3px8IU3FARvNJzNSNJo7laycWNOaHSu9EOw=',
     ],
     weight: '2 kg',
     weightBn: '২ কেজি',
@@ -222,7 +222,7 @@ export const products: Product[] = [
     category: 'dried',
     variety: mangoVarieties[2],
     images: [
-      'https://images.unsplash.com/photo-1548013146-72479768bada?w=600',
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRytg6qeikgY-eUUOiThQ3aHZg72XzGV4aakw&s',
     ],
     weight: '250g',
     weightBn: '২৫০ গ্রাম',
@@ -250,7 +250,7 @@ export const products: Product[] = [
     category: 'juice',
     variety: mangoVarieties[0],
     images: [
-      'https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?w=600',
+      'https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&q=80&w=800',
     ],
     weight: '500ml',
     weightBn: '৫০০ মিলি',
@@ -332,7 +332,7 @@ export const products: Product[] = [
     category: 'ripe',
     variety: mangoVarieties[6],
     images: [
-      'https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=600',
+      'https://sapaharmango.com/wp-content/uploads/2025/04/fazli-mango.jpg',
     ],
     weight: '1 kg',
     weightBn: '১ কেজি',

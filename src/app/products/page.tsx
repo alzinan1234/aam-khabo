@@ -150,9 +150,9 @@ function ProductsContent() {
           {filteredProducts.length} {t('products found', 'টি পণ্য পাওয়া গেছে')}
         </p>
 
-        {/* PRODUCTS GRID */}
+        {/* PRODUCTS GRID - Updated for 2 cards on mobile */}
         {filteredProducts.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+          <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
             {filteredProducts.map(product => (
               <ProductCard key={product.id} product={product} />
             ))}

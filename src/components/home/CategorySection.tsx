@@ -13,7 +13,7 @@ const categories = [
     bn: 'পাকা আম',
     desc_en: 'Sweet & juicy, hand-picked at peak ripeness',
     desc_bn: 'মিষ্টি ও রসালো, সেরা পাকা অবস্থায় বাছাই',
-    image: 'https://images.unsplash.com/photo-1553279768-865429fa0078?w=500&h=600&fit=crop',
+    image: 'https://t4.ftcdn.net/jpg/00/14/71/15/360_F_14711535_o3MgCpenxtKxNX5bw3iAzfoUfWBAKLuy.jpg',
     color: '#FFC324',
     href: '/products?category=ripe',
     count: '8 varieties',
@@ -24,7 +24,7 @@ const categories = [
     bn: 'কাঁচা আম',
     desc_en: 'Fresh & tangy for cooking and pickles',
     desc_bn: 'রান্না ও আচারের জন্য তাজা টক আম',
-    image: 'https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?w=500&h=600&fit=crop',
+    image: 'https://media.istockphoto.com/id/1154538189/photo/raw-green-mangoes-hanging-in-bunch-on-tree.jpg?s=612x612&w=0&k=20&c=tNMNGi8n3px8IU3FARvNJzNSNJo7laycWNOaHSu9EOw=',
     color: '#4A7C59',
     href: '/products?category=raw',
     count: '4 varieties',
@@ -35,7 +35,7 @@ const categories = [
     bn: 'শুকনো আম',
     desc_en: 'Healthy snacks, no added sugar',
     desc_bn: 'স্বাস্থ্যকর স্ন্যাক, চিনি ছাড়া',
-    image: 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=500&h=600&fit=crop',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRytg6qeikgY-eUUOiThQ3aHZg72XzGV4aakw&s',
     color: '#FF8C00',
     href: '/products?category=dried',
     count: '3 types',
@@ -46,7 +46,7 @@ const categories = [
     bn: 'আমের জুস',
     desc_en: 'Pure 100% natural mango juice',
     desc_bn: '১০০% প্রাকৃতিক আমের রস',
-    image: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=500&h=600&fit=crop',
+    image: 'https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&q=80&w=800',
     color: '#FFB347',
     href: '/products?category=juice',
     count: '5 flavors',
@@ -57,7 +57,7 @@ const categories = [
     bn: 'আচার',
     desc_en: 'Traditional Bengali mango pickles',
     desc_bn: 'ঐতিহ্যবাহী বাংলা আমের আচার',
-    image: 'https://images.unsplash.com/photo-1589216532372-1c2a367900d9?w=500&h=600&fit=crop',
+    image: 'https://www.shajgoj.com/wp-content/uploads/2016/04/mango.jpg',
     color: '#8B4513',
     href: '/products?category=pickle',
     count: '6 varieties',
@@ -68,7 +68,7 @@ const categories = [
     bn: 'আমের ক্যান্ডি',
     desc_en: 'Chewy & delicious mango candy',
     desc_bn: 'মজাদার চুইংগামি আমের ক্যান্ডি',
-    image: 'https://images.unsplash.com/photo-1582058091505-f87a2e55a40d?w=500&h=600&fit=crop',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOE9VaJxuQSeksvV5zdfgnnYiurYM_GQQLFw&s',
     color: '#E91E63',
     href: '/products?category=candy',
     count: '4 types',
@@ -79,7 +79,7 @@ const categories = [
     bn: 'আমের পাউডার',
     desc_en: 'Amchur powder for cooking',
     desc_bn: 'রান্নার জন্য আমচুর পাউডার',
-    image: 'https://images.unsplash.com/photo-1596040033229-a9821a1cb6e4?w=500&h=600&fit=crop',
+    image: 'https://organiconline.com.bd/wp-content/uploads/2018/11/protein-powder-600x600.webp',
     color: '#9C27B0',
     href: '/products?category=powder',
     count: '2 types',
@@ -90,7 +90,7 @@ const categories = [
     bn: 'ম্যাঙ্গো শেক',
     desc_en: 'Thick creamy milkshake',
     desc_bn: 'ঘন ক্রিমি মিল্কশেক',
-    image: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=500&h=600&fit=crop',
+    image: 'https://images.unsplash.com/photo-1571006682881-229202573229?auto=format&fit=crop&q=80&w=800',
     color: '#1565C0',
     href: '/products?category=shake',
     count: '3 flavors',
@@ -101,7 +101,7 @@ const categories = [
     bn: 'আমের চাটনি',
     desc_en: 'Sweet & spicy Bengali-style',
     desc_bn: 'মিষ্টি-ঝাল বাংলা স্টাইল',
-    image: 'https://images.unsplash.com/photo-1589216532372-1c2a367900d9?w=500&h=600&fit=crop',
+    image: 'https://www.daringgourmet.com/wp-content/uploads/2013/03/Mango-Chutney-2-square-edit-scaled.jpg',
     color: '#D84315',
     href: '/products?category=chutney',
     count: '5 varieties',
@@ -112,7 +112,7 @@ const categories = [
     bn: 'গিফট বক্স',
     desc_en: 'Premium mango gift hampers',
     desc_bn: 'প্রিমিয়াম আমের গিফট হ্যাম্পার',
-    image: 'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=500&h=600&fit=crop',
+    image: 'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&q=80&w=800',
     color: '#3949AB',
     href: '/products?category=gift',
     count: '4 sets',
@@ -125,6 +125,8 @@ export default function CategorySlider() {
   const [itemsToShow, setItemsToShow] = useState(3);
   const [windowWidth, setWindowWidth] = useState(0);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
 
   // Handle window resize
   useEffect(() => {
@@ -147,7 +149,6 @@ export default function CategorySlider() {
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
     }
-
     intervalRef.current = setInterval(() => {
       setCurrentIndex((prev) => {
         const maxIndex = categories.length - itemsToShow;
@@ -184,6 +185,33 @@ export default function CategorySlider() {
     setCurrentIndex(Math.min(Math.max(0, index), maxIndex));
   }, [itemsToShow]);
 
+  // Touch handlers for mobile swipe
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    const swipeDistance = touchEndX.current - touchStartX.current;
+    const minSwipeDistance = 50; // Minimum distance for swipe
+
+    if (Math.abs(swipeDistance) > minSwipeDistance) {
+      if (swipeDistance > 0 && currentIndex > 0) {
+        // Swipe right - go to previous
+        handlePrev();
+      } else if (swipeDistance < 0 && currentIndex < categories.length - itemsToShow) {
+        // Swipe left - go to next
+        handleNext();
+      }
+    }
+
+    // Reset touch positions
+    touchStartX.current = 0;
+    touchEndX.current = 0;
+  };
   const totalSlides = categories.length - itemsToShow + 1;
   const cardWidth = windowWidth > 0 ? 100 / itemsToShow : 33.33;
 
@@ -223,8 +251,13 @@ export default function CategorySlider() {
 
         {/* Slider Container */}
         <div className="relative group">
-          {/* Slider Wrapper */}
-          <div className="overflow-hidden rounded-3xl">
+          {/* Slider Wrapper with touch events */}
+          <div 
+            className="overflow-hidden rounded-3xl"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          >
             <div 
               className="flex transition-transform duration-700 ease-out"
               style={{ 
@@ -282,11 +315,11 @@ export default function CategorySlider() {
             </div>
           </div>
 
-          {/* Navigation Buttons */}
+          {/* Navigation Buttons - hide on mobile, show on desktop */}
           {currentIndex > 0 && (
             <button
               onClick={handlePrev}
-              className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm hover:bg-white rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110 z-10 opacity-0 group-hover:opacity-100"
+              className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm hover:bg-white rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110 z-10 opacity-0 group-hover:opacity-100 hidden md:inline-flex"
               aria-label="Previous"
             >
               <ChevronLeft size={24} className="text-gray-700" />
@@ -296,7 +329,7 @@ export default function CategorySlider() {
           {currentIndex < categories.length - itemsToShow && (
             <button
               onClick={handleNext}
-              className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm hover:bg-white rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110 z-10 opacity-0 group-hover:opacity-100"
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm hover:bg-white rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110 z-10 opacity-0 group-hover:opacity-100 hidden md:inline-flex"
               aria-label="Next"
             >
               <ChevronRight size={24} className="text-gray-700" />

@@ -182,13 +182,13 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-16 ">
             {/* LOGO */}
             <Link
               href="/"
               className="flex items-center gap-2.5 group flex-shrink-0"
             >
-              <div className="w-9 h-9 rounded-2xl bg-gradient-to-br from-[#FFC324] to-[#FF8C00] flex items-center justify-center text-lg shadow group-hover:scale-110 transition-transform">
+              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#FFC324] to-[#FF8C00] flex items-center justify-center text-lg shadow group-hover:scale-110 transition-transform">
                 🥭
               </div>
               <div className="hidden sm:block">
